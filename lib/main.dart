@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:SampleApp/routes/app_router.dart';
 import 'package:SampleApp/theme/colors.dart';
-import 'package:SampleApp/theme/text_theme_inter.dart';
+import 'package:SampleApp/theme/text_theme_mulish.dart';
 import 'package:provider/provider.dart';
 
 
@@ -33,18 +33,11 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Way Whiz',
             theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(
-                seedColor: backgroundColor,
-                primary: backgroundColor,
-                secondary: secondary,
-                tertiary: tertiary,
-                onPrimary: black,
-              ),
               appBarTheme: const AppBarTheme(
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.white,
                 actionsIconTheme: IconThemeData(
-                  color: white,
+                  color: Colors.white,
                 ),
               ),
               elevatedButtonTheme: ElevatedButtonThemeData(
@@ -53,35 +46,29 @@ class MyApp extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  foregroundColor: white,
-                  backgroundColor: backgroundColor,
-                  textStyle: interTheme.bodyLarge!.copyWith(
-                    color: white,
-                  ),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.grey,
+                  textStyle: TextStyle(color: Colors.black)
                 ),
               ),
               snackBarTheme: SnackBarThemeData(
-                backgroundColor: backgroundColor,
-                contentTextStyle: interTheme.labelLarge!.copyWith(
-                  color: white,
-                ),
+                backgroundColor: Colors.grey,
+                contentTextStyle: TextStyle(color: Colors.black)
               ),
               checkboxTheme: CheckboxThemeData(
-                checkColor: MaterialStateProperty.all(white),
+                checkColor: MaterialStateProperty.all(Colors.white),
               ),
               textButtonTheme: TextButtonThemeData(
                 style: TextButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  foregroundColor: backgroundColor,
-                  textStyle: interTheme.labelLarge!.copyWith(
-                    color: backgroundColor,
-                  ),
+                  foregroundColor: Colors.grey.shade100,
+                  textStyle: TextStyle(color: Colors.black)
                 ),
               ),
               useMaterial3: true,
-              textTheme: interTheme,
+              textTheme: ThemeData().textTheme,
             ),
             routerConfig: appRouter.config(),
           ),

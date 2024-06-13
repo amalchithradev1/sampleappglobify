@@ -27,7 +27,7 @@ class CustomButton extends ConsumerWidget {
       child: ElevatedButton(
         onPressed: () => onPressed(),
         style: ElevatedButton.styleFrom(
-          backgroundColor: customButtonColor,
+          backgroundColor: Colors.blueGrey,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

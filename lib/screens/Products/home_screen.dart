@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final productProvider = Provider.of<ProductProvider>(context);
     return SafeArea(
       child: Scaffold(
-        backgroundColor: screenBackgroundColor,
+        backgroundColor: Colors.grey.shade100,
         appBar: AppBar(
           leadingWidth: 0.0,
           toolbarHeight: MediaQuery.of(context).size.height * 0.1,

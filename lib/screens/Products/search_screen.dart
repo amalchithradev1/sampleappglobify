@@ -32,7 +32,7 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     final productProvider = Provider.of<ProductProvider>(context);
     return Scaffold(
-      backgroundColor: screenBackgroundColor,
+      backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
         leadingWidth: 0.0,
         toolbarHeight: MediaQuery.of(context).size.height * 0.1,

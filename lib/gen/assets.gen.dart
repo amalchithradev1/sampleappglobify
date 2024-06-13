@@ -9,16 +9,6 @@
 
 import 'package:flutter/widgets.dart';
 
-class $AssetsFontsGen {
-  const $AssetsFontsGen();
-
-  /// File path: assets/fonts/Inter.ttf
-  String get inter => 'assets/fonts/Inter.ttf';
-
-  /// List of all assets
-  List<String> get values => [inter];
-}
-
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
@@ -36,7 +26,6 @@ class $AssetsImagesGen {
 class Assets {
   Assets._();
 
-  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 

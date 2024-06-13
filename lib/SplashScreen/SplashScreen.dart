@@ -3,7 +3,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:SampleApp/theme/colors.dart';
-import 'package:SampleApp/theme/text_theme_inter.dart';
+import 'package:SampleApp/theme/text_theme_mulish.dart';
 import '../routes/app_router.gr.dart';
 
 @RoutePage()
@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: screenBackgroundColor,
+      backgroundColor: Colors.grey.shade100,
       body: SizedBox(
         height: MediaQuery.of(context).size.height * 1,
         child: Column(
@@ -57,14 +57,14 @@ class _SplashScreenState extends State<SplashScreen>
                   begin: Offset(0.0, 1.0),
                   end: Offset.zero,
                 ).animate(_animationController),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Sample App',
                       style: TextStyle(
                         color: Colors.orange,
-                        fontSize: 40.sp,
+                        fontSize: 40,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -72,7 +72,7 @@ class _SplashScreenState extends State<SplashScreen>
                       'Globify',
                       style: TextStyle(
                         color: Colors.blueAccent,
-                        fontSize: 40.sp,
+                        fontSize: 40,
                         fontWeight: FontWeight.w800,
                       ),
                     ),
@@ -90,8 +90,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ).animate(_animationController),
                 child: Text(
                   'Demo App for Globify Solutions',
-                  style: interTheme.bodyMedium!
-                      .copyWith(color: Colors.orange),
+                  style: TextStyle(color: Colors.orange)
                 ),
               ),
             ),

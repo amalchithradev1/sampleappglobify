@@ -1,4 +1,5 @@
 
+import 'package:SampleApp/theme/text_theme_mulish.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -21,7 +22,7 @@ class AddOrRemoveButton extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(3),
       decoration: BoxDecoration(
-        color: tertiary,
+        color: Colors.grey.shade300,
         borderRadius: BorderRadius.circular(50.0),
       ),
       child: Row(
@@ -37,10 +38,7 @@ class AddOrRemoveButton extends StatelessWidget {
             ),
             child: Text(
               count,
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyMedium
-                  ?.copyWith(color: Colors.white),
+              style: TextStyle(color: Colors.black54)
             ),
           ),
           _AddOrRemoveButtons(
